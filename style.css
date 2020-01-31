@@ -1,0 +1,117 @@
+/*
+Colour scheme
+#eeeeee
+#303030
+#b5d6b2
+#3d5a80
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    color: #303030;
+    font-family: 'Asap', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1.5em 0em;
+}
+
+.center {
+    margin: 0 auto;
+    width: 55%;
+}
+
+.warning {
+    font-size: 1.5em;
+    color: red;
+}
+
+.demo {
+    text-align: center;
+    padding: 1em 0em;
+    border: 5px solid #b5d6b2;
+}
+
+.lang {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.button_lang {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.1em 0em;
+    border-radius: 10px;
+    width: 5em;
+    transition: 0.25s ease;
+}
+
+.button_lang:hover {
+    background: #b5d6b2;
+    transition: 0.25s ease;
+}
+
+.current_lang {
+    background: #b5d6b2;
+}
+
+.translation {
+    font-size: 2em;
+}
+
+.english {
+    font-family: 'Asap', sans-serif;
+}
+
+.chinese {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.japanese {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.explain {
+    padding: 1em 0em;
+}
+
+.example {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.credits {
+    text-align: center;
+    font-size: 2em;
+    padding: 1.5em 0em;
+}
+
+.credits i {
+    font-size: 1em;
+    color: #303030;
+    padding: 0.25em;
+    transition: 0.3s ease;
+}
+
+.credits i:hover {
+    text-decoration: none;
+    color: #3d5a80;
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 1600px) {
+    .center {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .center {
+        width: 80%;
+    }
+}

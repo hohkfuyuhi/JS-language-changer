@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title>Simple JS language changer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300&display=swap">
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="center">
+            <header>
+                <h1>Simple JS language changer</h1>
+            </header>
+            <div class="caveats">
+               If you used Google to find out how to change your website's language with JavaScript, you would have most likely came across <a href="https://benfrain.com/creating-a-language-switcher-in-javascript/" target="_blank">Ben Frain's post.</a><br><br>
+               It's not a bad solution, but if you've just started your coding journey (or if you just want a quick fix), it might be too complex to understand - which is why I have come up with a simpler solution.<br><br>My solution is much simpler to implement and understand, but it comes with some very specific caveats:
+                <ol>
+                    <li><strong><span class="warning">WILL NOT WORK IF JAVASCRIPT IS DISABLED</span></strong></li>
+                    <li><strong>This is not a translator</strong> - all my solution does is replace text</li>
+                    <li>You <strong>must have</strong> a translated version of your text beforehand</li>
+                    <li>Recommended for short to medium length text - as the amount of text, languages, or both increases, the amount of code will significantly increase too.</li>
+                </ol>
+            </div>
+            <div class="demo">
+                <h4>See it in action:</h4>
+                <table class="table table-borderless lang">
+                    <tr>
+                        <td class="tdlang"><span id="en" class="button_lang current_lang">EN</span></td>
+                        <td class="tdlang"><span id="cn" class="button_lang">中文</span></td>
+                        <td class="tdlang"><span id="jp" class="button_lang">日本語</span></td>
+                    </tr>
+                </table>
+                <div class="translation english" id="translate">
+                    The text here will change
+                </div>
+            </div>
+            <div class="explain">
+                There is no real time translation going on - all we are doing is simply changing the on-screen text via JavaScript with the innerHTML property. This is very simple to implement, but as I've mentioned above, this method can get extremely tedious if you have a lot of text to replace.<br><br>In the CodePen example below, I use a table for formatting reasons, but you can use anything you want, as long as there are span tags with unique IDs for users to click on:
+            </div>
+        </div>
+        <div class="example">
+            <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="js,result" data-user="hohkfuyuhi" data-slug-hash="povXwKM" data-preview="true" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Simple JS language changer">
+                <span>See the Pen <a href="https://codepen.io/hohkfuyuhi/pen/povXwKM">
+                    Simple JS language changer</a> by hohkfuyuhi (<a href="https://codepen.io/hohkfuyuhi">@hohkfuyuhi</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+        </div>
+        <div class="credits">
+            Max Ho
+            <div class="icons">
+                <a href="https://hohkfuyuhi.github.io/" target="_blank"><i class="fas fa-globe"></i></a>
+                <a href="https://github.com/hohkfuyuhi" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <script src="changer.js"></script>
+    </body>
+</html>
