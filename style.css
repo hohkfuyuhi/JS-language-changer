@@ -14,6 +14,7 @@ body {
     background-color: #eeeeee;
     color: #303030;
     font-family: 'Asap', sans-serif;
+    font-size: 1.25em;
 }
 
 header {
@@ -77,7 +78,7 @@ header {
 }
 
 .explain {
-    padding: 1em 0em;
+    padding-bottom: 1em;
 }
 
 .example {
